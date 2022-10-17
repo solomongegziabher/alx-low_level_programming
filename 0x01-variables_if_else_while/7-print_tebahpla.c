@@ -1,7 +1,7 @@
 #include <stdio.o>
 
 /**
- * main - prints the alphabets in reverse
+ * main - print the alphabets in reverse
  * Return: Always 0
  */
 int main(void)
