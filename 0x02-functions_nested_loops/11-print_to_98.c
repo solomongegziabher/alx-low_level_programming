@@ -3,21 +3,21 @@
 
 /**
  * print_to_98 - prints all numbers from input to 98
- * @a: The starting number
+ * @n: The starting number
  */
 
-void print_to_98(int a)
+void print_to_98(int n)
 {
-	if (a >= 98)
+	if (n >= 98)
 	{
-		while (a > 98)
-			printf("%d, ", a--);
-		printf("%d\n", a);
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
 	else
 	{
-		while (a < 98)
-			printf("%d, ", a++)
-				printf("%d\n", a);
+		while (n < 98)
+			printf("%d, ", n++)
+				printf("%d\n", n);
 	}
 }
