@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - checks for alphabet
- * qc: character to be cheched
+ * @c: character to be cheched
  *
  * Returns: 1 if character is a letter, 0 otherwise
  */
