@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
+ * print_sign - print the sign of a number
  * @n: the number of the sign to be printed
  * Return: 1 if number is greater than zero
  * 0 if number is zero
@@ -23,7 +23,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putcar('-');
+		_putchar('-');
 
 		return (-1);
 	}
