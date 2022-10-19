@@ -3,20 +3,20 @@
 
 /**
  * print_to_98 - prints all numbers from input to 98
- * @n: The starting number
+ * @num: The starting number
  */
-void print_to_98(int n)
+void print_to_98(int num)
 {
-	if (n <= 98)
+	if (num <= 98)
 	{
-		while (n < 98)
-			printf("%d, ", n++);
-		printf("%d\n", n);
+		while (num < 98)
+			printf("%d, ", num++);
+		printf("%d\n", num);
 	}
 	else
 	{
-		while (n > 98)
-			printf("%d, ", n--)
-				printf("%d\n", n);
+		while (num > 98)
+			printf("%d, ", num--);
+				printf("%d\n", num);
 	}
 }
