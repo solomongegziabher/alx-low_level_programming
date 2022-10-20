@@ -2,8 +2,8 @@
 
 /**
  * largest_number - returns the largest number
- * @a: first intiger
- * @b: second intiger
+ * @a: first integer
+ * @b: second integer
  * @c: third intiger
  * Return: largest number
  */
