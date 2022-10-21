@@ -2,27 +2,32 @@
 
 /**
  * print_triangle - prints a triangle
- * @n: size of the triangle
+ * @size: Intiger type
+ * Return: void
  */
 
-void print_triangle(int n)
+void print_triangle(int size)
 {
-	int h, tri;
+	int i = 1, ii;
 
-	if (n > 0)
+	while (i <= size && size > 0)
 	{
-		for (h = 1; h <= n; h++)
+		ii = 0;
+		while (ii < size - i)
 		{
-			for (tri = n - h; tri > 0; tri--)
-				_putchar(' ');
-
-			for (tri = 0; tri < h; tri++)
-				_putchar('#');
-
-			if (h == n)
-				continue;
-
-			_putchar('\n');
+			_putchar(' ');
+			ii++;
 		}
+		ii = 0;
+		while (ii < i)
+		{
+			_putchar('#');
+			ii++;
+		}
+
+		_putchar('\n');
+		i++;
 	}
+	if (i == 1)
+		_putchar('\n');
 }
