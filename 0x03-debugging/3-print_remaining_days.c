@@ -1,5 +1,3 @@
-#includt
-<stdio.h>
 #include "main.h"
 
 /**
