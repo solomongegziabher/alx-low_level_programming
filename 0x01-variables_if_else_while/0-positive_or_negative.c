@@ -1,8 +1,8 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <stdilib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - entry point
  * Description: prints if a number is positive or negative.
  * Return : 0
  */
