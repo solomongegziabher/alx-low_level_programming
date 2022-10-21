@@ -1,7 +1,7 @@
 #include "main.h"
+
 /**
  * print_numbers - prints numbers exept 2 and 4
- *
  * Return: returns nothing
  */
 void print_numbers(void)
