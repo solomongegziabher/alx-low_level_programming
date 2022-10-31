@@ -1,33 +1,32 @@
 #include "main.h"
 
 /**
- * string_toupper - Change all lowercase letters to uppercase
- * @c: string
- * Return: c
+ * _strstr - function locate
+ * @haystack: pointer to char
+ * @needle: pointer to char
+ * Return: 0
  */
 
-char *string_toupper(char *c)
-
+char *_strstr(char *haystack, char *needle)
 {
+	char *result = haystack, *fneedle = needle;
 
-		int i;
-
-
-
-			for (i = 0; c[i] != '\0'; i++)
-
-					{
-
-								if (c[i] > 96 && c[i] < 123)
-
-											{
-
-															c[i] -= 32;
-
-																	}
-
-									}
-
-				return (c);
-
+	while (*haystack)
+	{
+		while (*needle)
+		{
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
+		}
+		if (!*needle)
+		{
+			return (result);
+		}
+		needle = fneedle;
+		result++;
+		haystack = result;
+	}
+	return (0);
 }
