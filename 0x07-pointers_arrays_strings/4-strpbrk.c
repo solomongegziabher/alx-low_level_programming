@@ -1,31 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * reverse_array - reverse the contents of an array of integers
- * @a: array of integers
- * @n: number of elements in array
+ * _strpbrk - bytes
+ * @s: pointer to char
+ * @accept: pointer to char
+ * Return: NULL
  */
 
-void reverse_array(int *a, int n)
-
+char *_strpbrk(char *s, char *accept)
 {
+	int i;
 
-		int i;
-
-			int h;
-
-
-
-				for (i = 0; i < (n / 2); i++)
-
-						{
-
-									h = a[i];
-
-											a[i] = a[n - i - 1];
-
-													a[n - i - 1] = h;
-
-														}
-
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
+				return (s);
+			}
+		}
+		s++;
+	}
+	return (NULL);
 }
