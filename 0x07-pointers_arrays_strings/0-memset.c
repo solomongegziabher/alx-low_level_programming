@@ -1,36 +1,28 @@
 #include "main.h"
 
 /**
- * _strcat - concatenate two strings
- * @dest: char string to concatenate to
- * @src: char string
- * Return: pointer to resulting string `dest
+ * _memset - ironnou
+ * @s: pointer to char params
+ * @b: data to change
+ * @n: index
+ * Return: *s
  */
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b, unsigned int n)
 
 {
 
-		int i, c;
+		unsigned int i;
 
 
 
-			for (i = 0; dest[i] != '\0'; i++)
+			for (i = 0; i < n; i++)
 
-						;
+					{
 
+								s[i] = b;
 
+									}
 
-				for (c = 0; src[c] != '\0'; c++)
-
-						{
-							dest[i] = src[c];
-							i++;
-						}
-
-
-
-					dest[i] = '\0';
-
-						return (dest);
+				return (s);
 
 }
