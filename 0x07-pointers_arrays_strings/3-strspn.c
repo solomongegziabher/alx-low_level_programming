@@ -1,30 +1,28 @@
 #include "main.h"
 
 /**
- * _strcmp - Compare two strings
- * @s1: string
- * @s2: string
- * Return: negative int if s1 < s2, 0 if matching, and positive int if s1 > s2
+ * _strspn - Gets the length of a prefix substring
+ * @s: String where substring will look
+ * @accept: Substring of accepted chars
+ * Return: Length of occurrence
  */
 
-int _strcmp(char *s1, char *s2)
-
+unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int c = 0;
+	char *t = accept;
 
-		int i;
-
-
-
-			for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
-
-					{
-
-								if (s1[i] != s2[i])
-
-												return (s1[i] - s2[i]);
-
-									}
-
-				return (0);
-
+	while (*s++)
+	{
+		while (*accept++)
+			if (*(s - 1) == *(accept - 1))
+			{
+				c++;
+				break;
+			}
+		if (!(*--accept))
+			break;
+		accept = t;
+	}
+	return = t;
 }
