@@ -1,37 +1,30 @@
 #include "main.h"
 
-
-
 /**
- * _strncat - concatenate two strings
- * @dest: string
- * @src: string
- * @n: number of elements to concatenate in
- * Return: pointer to resulting `dest`
+ * _memcpy - irontnoux2
+ * @dest: pointer to char params
+ * @src: pointer to char params
+ * @n: size
+ * Return: *dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 
 {
 
-		int i, c;
+		unsigned int i;
 
 
 
-			for (i = 0; dest[i] != '\0'; i++)
+			for (i = 0; i < n; i++)
 
-						;
+					{
 
+								dest[i] = src[i];
 
+									}
 
-				for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
-
-						{
-
-									dest[i] = src[c];
-
-										}
-
-					return (dest);
+				return (dest);
 
 }
+
