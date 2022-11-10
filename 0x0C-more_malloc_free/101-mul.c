@@ -1,13 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * _print - moves a string one place to the left and prints the string
  * @str: string to move
  * @l: size of string
+ *
  * Return: void
  */
-
 void _print(char *str, int l)
 {
 	int i, j;
@@ -33,9 +34,9 @@ void _print(char *str, int l)
  * @num_index: last non NULL index of num
  * @dest: destination of multiplication
  * @dest_index: highest index to start addition
+ *
  * Return: pointer to dest, or NULL on failure
  */
-
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
 	int j, k, mul, mulrem, add, addrem;
@@ -61,13 +62,12 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	}
 	return (dest);
 }
-
 /**
  * check_for_digits - checks the arguments to ensure they are digits
  * @av: pointer to arguments
+ *
  * Return: 0 if digits, 1 if not
  */
-
 int check_for_digits(char **av)
 {
 	int i, j;
@@ -89,7 +89,6 @@ int check_for_digits(char **av)
  * @l: length of strinf
  * Return: void
  */
-
 void init(char *str, int l)
 {
 	int i;
@@ -105,7 +104,6 @@ void init(char *str, int l)
  * @argv: argument vector
  * Return: zero, or exit status of 98 if failure
  */
-
 int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
@@ -119,8 +117,10 @@ int main(int argc, char *argv[])
 			_putchar(e[ti]);
 		exit(98);
 	}
-	for (l1 = 0; argv[1][l1]; l1++);
-	for (l2 = 0; argv[2][l2]; l2++);
+	for (l1 = 0; argv[1][l1]; l1++)
+		;
+	for (l2 = 0; argv[2][l2]; l2++)
+		;
 	ln = l1 + l2 + 1;
 	a = malloc(ln * sizeof(char));
 	if (a == NULL)
