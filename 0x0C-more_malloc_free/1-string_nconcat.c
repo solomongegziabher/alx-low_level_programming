@@ -1,12 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * _strlen - calculate and return string length
  * @string: string
  * Return: string length
  */
-
 int _strlen(char *string)
 {
 		int i;
@@ -15,7 +13,6 @@ int _strlen(char *string)
 		
 		return (i);
 }
-
 /**
  * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
  * @s1: string 1
