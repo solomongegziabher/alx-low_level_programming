@@ -9,6 +9,10 @@
  * NULL if malloc fails
  * Pointer to memory allocated if successful
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f40cbcdee6ec5995589b1aaf1ece9ffe2869c41
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
