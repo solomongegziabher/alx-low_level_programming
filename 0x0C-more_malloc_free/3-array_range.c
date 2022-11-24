@@ -9,7 +9,10 @@
  * NULL if malloc fails
  * NULL if min > max
  */
+<<<<<<< HEAD
+=======
 
+>>>>>>> 5f40cbcdee6ec5995589b1aaf1ece9ffe2869c41
 int *array_range(int min, int max)
 {
 	int range, i;
