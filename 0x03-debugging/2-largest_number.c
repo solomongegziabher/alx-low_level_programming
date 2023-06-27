@@ -44,6 +44,7 @@ else
 largest = c;
 }
 }
+
 else if (b > c)
 {
 largest = b;
@@ -53,5 +54,4 @@ else
 largest = c;
 }
 return (largest);
->>>>>>> 5883b946cc41890249ef5c166ae22628c5283f07
 }
